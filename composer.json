@@ -1,0 +1,20 @@
+{
+	"name": "tjm/cache"
+	,"description": "A simple filesystem cache implementation for storing PHP data"
+	,"authors": [
+		{
+			"name": "Toby Mackenzie"
+			,"email": "public@tobymackenzie.com"
+			,"homepage": "https://www.tobymackenzie.com"
+		}
+	]
+	,"license": "BSD-3-Clause"
+	,"autoload": {
+		"psr-4": {
+			"TJM\\Cache\\": "src"
+		}
+	}
+	,"require": {
+		"php": ">=5.3.3"
+	}
+}
