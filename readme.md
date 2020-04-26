@@ -14,12 +14,14 @@ Use
 #### `get(string $key, callable $calculator = null, int|bool|callable $validator = true)`
 
 - $key: string reference of item, used to store
-- $calculator: callable, returns cache value, run only if cache is invalidated
+- $calculator: callable, returns cache value. run only if cache is invalidated, then stored in cache
 - $validator: validate cache.
 	- false: always invalid
 	- true: invalid if already in cache
 	- int: number of seconds since creation to consider stale
 	- callable: return boolean of whether item is valid
+
+Returns cached or calculated value.
 
 ### example
 
